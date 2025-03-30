@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "assets": [
+     
+    ]
+  },
+  "projects": {
+    "metric-lib": {
+      "type": "library",
+      "root": "libs/metric-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/metric-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/metric-lib/tsconfig.lib.json"
+      }
+    }
+  }
+}
